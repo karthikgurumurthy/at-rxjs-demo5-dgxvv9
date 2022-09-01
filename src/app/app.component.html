@@ -1,0 +1,8 @@
+<app-header></app-header>
+
+<app-card *ngFor="let card of cards; index as i" [index]="i + 1"> </app-card>
+
+<br />&nbsp;<br />
+<button (click)="cards.push('')">Add another card component</button>
+<br />&nbsp;<br />
+<button (click)="cards = []">Remove all cards</button>
